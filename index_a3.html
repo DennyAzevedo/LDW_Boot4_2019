@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+        <title>Projeto Bootstrap 4</title>
+
+        <!-- CSS para pintar e colocar borda nas colunas -->
+        <style type="text/css">
+            .row [class^="col-"], .row .col 
+            {
+                background-color: yellow;
+                border: 1px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">...</div>
+                <div class="col">...</div>
+                <div class="col">...</div>
+                <!-- Demonstrar primeiro sem a quebra -->
+                <div class="w-100"></div>
+
+                <div class="col">...</div>
+                <div class="col">...</div>
+                <div class="col">...</div>
+            </div>
+        </div>
+
+        <!-- Segunda forma de "quebrar" linhas-->
+        <div class="container">
+            <div class="row">
+                <div class="col">...</div>
+                <div class="col">...</div>
+                <div class="col">...</div>
+            </div>
+            <div class="row">
+                <div class="col">...</div>
+                <div class="col">...</div>
+                <div class="col">...</div>
+            </div>
+        </div>
+
+        <!-- 
+            Ajuste de tamanho das colunas
+            "Brincar" com os diversos valores
+            Modificar utilizando informações de mínimo
+        -->
+        <div class="container">
+            <div class="row">
+                <div class="col-2">...</div>
+                <div class="col-4">...</div>
+                <div class="col-6">...</div>
+            </div>
+        </div>
+            
+        <!-- Scripts -->
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -11,18 +11,20 @@
 
     <!-- CSS para pintar e colocar borda nas colunas -->
     <style type="text/css">
-
+        #area{
+            border: 1px solid #000;
+            padding: 20px;
+            background-color: #EEE;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <h4 class="alert-heading">Deu errado!</h4>
-            E-mail e/ou senha incorreto!
-            <button class="close" data-dismiss="alert" aria-label="Fechar">
-                <span aria-hidden="true">&times;</span>
-            </button>
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#area">Mostrar/Esconder</button>
+        
+        <div class="collapse" id="area">
+            O texto escondido que vai aparecer.
         </div>
     </div>
 

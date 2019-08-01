@@ -11,38 +11,20 @@
 
     <!-- CSS para pintar e colocar borda nas colunas -->
     <style type="text/css">
-
+        #area{
+            border: 1px solid #000;
+            padding: 20px;
+            background-color: #EEE;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <!-- Mostrar o menu a direita -->
-        <!-- <div class="dropdown dropright"> -->
-        <!-- Mostrar o menu acima -->
-        <!-- <div class="dropdown dropup"> -->
-        <!-- Mostrar o menu a esquerda -->
-        <!-- <div class="dropdown dropleft"> -->
-        <div class="dropdown">
-            <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Editar</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="https://google.com">Google</a>
-                <a class="dropdown-item" href="https://facebook.com">Facebook</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://youtube.com">YouTube</a>
-            </div>
-        </div>
-
-        <!-- Dropdown e botão juntos-->
-        <div class="dropdown btn-group">
-            <a href="https://instagram.com" class="btn btn-primary">Instagram</a>
-            <a href="#" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="https://google.com">Google</a>
-                <a class="dropdown-item" href="https://facebook.com">Facebook</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://youtube.com">YouTube</a>
-            </div>
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#area">Mostrar/Esconder</button>
+        
+        <div class="collapse" id="area">
+            O texto escondido que vai aparecer.
         </div>
     </div>
 

@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <title>Projeto Bootstrap 4</title>
+
+    <!-- CSS para pintar e colocar borda nas colunas -->
+    <style type="text/css">
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form method="POST">
+            E-mail:<br><br>
+            <input type="email" name="email" /><br><br>
+            Senha:<br><br>
+            <input type="password" name="senha" /><br><br>
+            <input type="submit" value="Entrar" />
+        </form>
+        <hr>
+        <!--
+            Classe form-control-lg : exibe a caixa de texto maior
+            Classe form-control-sm : exibe a caixa de texto menor
+        -->
+        <form method="POST">
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input class="btn btn-primary" type="submit" value="Entrar" />
+            </div>
+        </form>
+        <hr>
+        <form method="POST">
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" class="form-control-plaintext" value="contato@mdvirtualsolution.com.br" readonly />
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input class="btn btn-primary" type="submit" value="Entrar" />
+            </div>
+        </form>
+        <hr>
+        <form method="POST">
+            <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="E-mail" />
+            </div>
+            <div class="form-group">
+                <input type="password" name="senha" class="form-control" placeholder="Senha" />
+            </div>
+            <div class="form-group">
+                <input class="btn btn-primary" type="submit" value="Entrar" />
+            </div>
+        </form>
+        <hr>
+        <form method="POST" class="form-inline">
+            <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="E-mail" />
+            </div>
+            <div class="form-group">
+                <input type="password" name="senha" class="form-control" placeholder="Senha" />
+            </div>
+            <div class="form-group">
+                <input class="btn btn-primary" type="submit" value="Entrar" />
+            </div>
+        </form>
+        <hr>
+        <form method="POST">
+            <div class="form-row">
+                <div class="col">
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="E-mail" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <input type="password" name="senha" class="form-control" placeholder="Senha" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    <div class="form-group">
+                        <input class="btn btn-primary" type="submit" value="Entrar" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</body></html>
